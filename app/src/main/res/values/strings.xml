@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BoardGamesAspp</string>
+    <string name="boardgames">JUEGOS DE MESA\n</string>
+    <string name="categories">CATEGORIAS</string>
+    <string name="games">JUEGOS</string>
+    <string name="dialog_add_game">Añade un juego</string>
+    <string name="dialog_newgame_button">Nuevo Juego</string>
+    <string name="dialog_cooperative_category">Cooperativos</string>
+    <string name="dialog_deckbuilding_category">Deckbuilding</string>
+    <string name="dialog_lcg_category">Living Card Games</string>
+    <string name="dialog_legacy_category">Legacy</string>
+    <string name="dialog_Deckbuilding_category">Deckbuilding</string>
+    <string name="dialog_eurogames_category">EuroGames</string>
+    <string name="dialog_LCG_category">LCG</string>
+</resources>
