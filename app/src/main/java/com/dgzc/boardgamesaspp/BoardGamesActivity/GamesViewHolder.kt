@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.dgzc.boardgamesaspp.R
 

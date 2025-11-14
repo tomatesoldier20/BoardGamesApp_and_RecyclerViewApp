@@ -15,11 +15,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         VerticalsBars("color 2", 90872543),
         VerticalsBars("color 3", 11111111),
         VerticalsBars("color 4", 98762543),
-        VerticalsBars("color 5", 58342952),
-        VerticalsBars("color 6", 82549022),
-        VerticalsBars("color 7", 21902832),
-        VerticalsBars("color 8", 67854522),
-        VerticalsBars("color 9", 34567891)
+        VerticalsBars("color 5", 58342952)
 
     )
 
