@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_constraintStart_toStartOf="parent"
-        android:layout_constraintTop_toTopOf="parent"
         android:background="@color/bgapp_background_app"
         android:orientation="vertical">
 
@@ -20,8 +20,7 @@
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_constraintStart_toStartOf="parent"
-                android:layout_constraintTop_toTopOf="parent"
+
                 android:background="@color/bgapp_background_app"
                 android:orientation="vertical"
                 android:padding="16dp">
@@ -103,8 +102,6 @@
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_constraintStart_toStartOf="parent"
-                android:layout_constraintTop_toTopOf="parent"
                 android:background="@color/bgapp_background_app"
                 android:orientation="vertical"
                 android:padding="16dp">
