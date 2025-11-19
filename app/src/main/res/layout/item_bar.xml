@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="360dp"
-        android:orientation="vertical"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvVerticalBarBackground"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginHorizontal="16dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvVerticalBarBackground"
+        <TextView
+            android:id="@+id/tvVerticalBarTextName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/white">
-
-            <TextView
-                android:id="@+id/tvVerticalBarTextName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="prueba"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="16dp"/>
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

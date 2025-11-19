@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BoardGamesAspp">
         <activity
+            android:name=".SuperHeroApp.SuperHeroListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Aplicación_con_RecyclerView_y_Dialog.RecyclerViewActivity"
             android:exported="false" />
         <activity

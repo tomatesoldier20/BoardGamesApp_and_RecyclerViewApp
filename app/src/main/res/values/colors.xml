@@ -23,4 +23,60 @@
     <color name="bgapp_cooperative_category">#D016F1</color>
     <color name="bgapp_legacy_category">#EDF351</color>
 
+    //colores con opacidades
+        //azul
+        <color name="Blue_20º">#330156FF</color>
+        <color name="Blue_35º">#590156FF</color>
+        <color name="Blue_50º">#800156FF</color>
+        <color name="Blue_65º">#A60156FF</color>
+        <color name="Blue_80º">#CC0156FF</color>
+        //rojo
+        <color name="Red_20º">#33FF0101</color>
+        <color name="Red_35º">#59FF0101</color>
+        <color name="Red_50º">#80FF0101</color>
+        <color name="Red_65º">#A6FF0101</color>
+        <color name="Red_80º">#CCFF0101</color>
+        //verde
+        <color name="Green_20º">#3301FF01</color>
+        <color name="Green_35º">#5901FF01</color>
+        <color name="Green_50º">#8001FF01</color>
+        <color name="Green_65º">#A601FF01</color>
+        <color name="Green_80º">#CC01FF01</color>
+        //amarillo
+        <color name="Yellow_20º">#33FFFF01</color>
+        <color name="Yellow_35º">#59FFFF01</color>
+        <color name="Yellow_50º">#80FFFF01</color>
+        <color name="Yellow_65º">#A6FFFF01</color>
+        <color name="Yellow_80º">#CCFFFF01</color>
+        //morado
+        <color name="Purple_20º">#33FF01FF</color>
+        <color name="Purple_35º">#59FF01FF</color>
+        <color name="Purple_50º">#80FF01FF</color>
+        <color name="Purple_65º">#A6FF01FF</color>
+        <color name="Purple_80º">#CCFF01FF</color>
+        //naranja
+        <color name="Orange_20º">#33FF8000</color>
+        <color name="Orange_35º">#59FF8000</color>
+        <color name="Orange_50º">#80FF8000</color>
+        <color name="Orange_65º">#A6FF8000</color>
+        <color name="Orange_80º">#CCFF8000</color>
+        //marron
+        <color name="Garnet_20º">#33E91E63</color>
+        <color name="Garnet_35">#59E91E63</color>
+        <color name="Garnet_50">#80E91E63</color>
+        <color name="Garnet_65">#A6E91E63</color>
+        <color name="Garnet_80">#CCE91E63</color>
+        //gris
+        <color name="Gray_20º">#33454545</color>
+        <color name="Gray_35º">#59454545</color>
+        <color name="Gray_50º">#80454545</color>
+        <color name="Gray_65º">#A6454545</color>
+        <color name="Gray_80º">#CC454545</color>
+
+
+
+
+
+
+
 </resources>

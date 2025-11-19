@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.dgzc.boardgamesaspp.Aplicación_con_RecyclerView_y_Dialog.RecyclerViewActivity
 import com.dgzc.boardgamesaspp.BoardGamesActivity.BoardgamesActivity
+import com.dgzc.boardgamesaspp.SuperHeroApp.SuperHeroListActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         var AppRV = findViewById<Button>(R.id.AppRV)
         AppRV.setOnClickListener { navigateToAppRV() }
 
+        var SHApp = findViewById<Button>(R.id.btnSHApp)
+        SHApp.setOnClickListener { navigateToSHApp() }
     }
 
     private fun navigateToBoardGamesApp(){
@@ -36,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToAppRV(){
         var intent = Intent(this, RecyclerViewActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSHApp(){
+        var intent = Intent(this, SuperHeroListActivity::class.java)
         startActivity(intent)
     }
 

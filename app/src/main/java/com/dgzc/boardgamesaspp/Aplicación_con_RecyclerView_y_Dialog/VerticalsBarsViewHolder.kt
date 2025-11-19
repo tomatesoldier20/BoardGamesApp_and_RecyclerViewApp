@@ -14,26 +14,18 @@ class VerticalsBarsViewHolder (view: View) : RecyclerView.ViewHolder(view){
 
     private val texto = view.findViewById<TextView>(R.id.tvVerticalBarTextName)// va a indicar donde se va a cambiar el color del CardView
 
-    fun render(item: VerticalsBars){
-        texto.text = "${item.name} (${item.porcentaje})"
 
-        background.setCardBackgroundColor(
-            ContextCompat.getColor(itemView.context, item.color)
-        )
+    fun pintar(item: VerticalsBars){
+    // Tachar si está seleccionado
+    if (item.isSelected) {
+        texto.paintFlags = texto.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+    } else {
+        texto.paintFlags = texto.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
     }
-    fun pintar(background: VerticalsBars){
-        if (background.isSelected) {
-            texto.paintFlags = texto.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-        } else {
-            texto.paintFlags = texto.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
-        }
-
-
-        texto.text = background.name
-
-        /*val color = when(background.color) {
-
-        }*/
+    // Texto
+        texto.text = "${item.name} (${item.porcentaje})"
+    // Color del fondo
+        background.setCardBackgroundColor(item.color)
     }
 
 
