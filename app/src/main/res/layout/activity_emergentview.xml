@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:buttonTint="@color/bgapp_cooperative_category"
                         android:checked="true"
-                        android:text="V2 (50%)"
+                        android:text="V2 (35%)"
                         android:textColor="@color/white" />
 
                     <RadioButton
@@ -92,7 +92,23 @@
                         android:layout_height="wrap_content"
                         android:buttonTint="@color/bgapp_cooperative_category"
                         android:checked="true"
-                        android:text="V3 (80%)"
+                        android:text="V3 (50%)"
+                        android:textColor="@color/white" />
+                    <RadioButton
+                        android:id="@+id/rbV4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/bgapp_cooperative_category"
+                        android:checked="true"
+                        android:text="V4 (65%)"
+                        android:textColor="@color/white" />
+                    <RadioButton
+                        android:id="@+id/rbV5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/bgapp_cooperative_category"
+                        android:checked="true"
+                        android:text="V5 (80%)"
                         android:textColor="@color/white" />
 
                 </RadioGroup>
@@ -201,7 +217,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnAddGame"
+            android:id="@+id/btnChangeColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"

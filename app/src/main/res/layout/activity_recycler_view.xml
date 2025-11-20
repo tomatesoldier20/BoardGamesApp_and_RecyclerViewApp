@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="64dp"
                 android:text="H1 (20%)"
+                android:textColor="@color/black"
                 android:textAlignment="textStart"
                 android:textStyle="bold" />
 
@@ -74,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="64dp"
                 android:text="H2 (50%)"
+                android:textColor="@color/black"
                 android:textAlignment="textStart"
                 android:textStyle="bold" />
 
@@ -93,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="64dp"
                 android:text="H3 (80%)"
+                android:textColor="@color/black"
                 android:textAlignment="textStart"
                 android:textStyle="bold" />
 
