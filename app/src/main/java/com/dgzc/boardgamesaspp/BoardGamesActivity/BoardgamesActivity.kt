@@ -79,7 +79,7 @@ class BoardgamesActivity : AppCompatActivity() {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_game)
 
-        var btnAddGame: Button = dialog.findViewById(R.id.btnAddGame)
+        var btnAddGame: Button = dialog.findViewById(R.id.btnChangeColor)
         var etGame: EditText = dialog.findViewById(R.id.etGame)
         var rgCategories = dialog.findViewById<RadioGroup>(R.id.rgCategories)
 

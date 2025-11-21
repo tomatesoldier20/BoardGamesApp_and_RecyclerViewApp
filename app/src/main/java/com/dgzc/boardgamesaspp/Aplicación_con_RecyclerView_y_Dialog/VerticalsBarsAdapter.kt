@@ -11,6 +11,16 @@ class VerticalsBarsAdapter (private val verticalsBarsList: List<VerticalsBars>) 
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_bar, parent, false)
         return VerticalsBarsViewHolder(view)
     }
+    /**
+     * @author Gabriel Orlando Cruz Parraga
+     * @name updateColors
+     *
+     * Actualiza el color de la barra en la posición dada.
+     *
+     * @param indice // La posición de la barra a actualizar dentro de la lista de tipo VerticalsBars.
+     * @param newcolor // El nuevo color de la barra.
+     * @see notifyItemChanged // Es un método estático de la clase Adapter que notifica el cmabio de una variable u objeto dentro del adaptador.
+     */
 
     fun updateColors(indice: Int, newcolor: Int) {
         verticalsBarsList[indice].color = newcolor

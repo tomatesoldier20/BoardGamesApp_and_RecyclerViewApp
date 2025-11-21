@@ -52,20 +52,21 @@ class RecyclerViewActivity : AppCompatActivity() {
      * @author Gabriel Orlando Cruz Parraga
      *
      * @name showColorChangeDialog
-     * Muestra el diálogo para cambiar el color de fondo de la barra vertical.
+     * Muestra el diálogo para cambiar el color de fondo de la barra vertical, y una vez finalizado la logica del método
+     * .getColorFromName() cerrará el AlertDialog.
      *
-     * @AlertDialog
-     * @Builder Es una clase auxiliar que sirve para montar un AlertDialog,
+     * @see AlertDialog // Es una clase Heredada de Dialog que crea ventanas emergentes, la diferencia principal entre su padre (Dialog) y AlertDialog
+     * que AlertDialog genera elementos especiales como un Titulo, botones, un mensaje, y otros elementos que la Clase Padre (Dialog) no lo hace.
+     * @see Builder // Es una clase auxiliar que sirve para crear construcctores de diferentes Clases, en este caso sirve para definir el constructor
+     * de la Clase AlertDialog.
      *
-     * @property dialogView // Variable que va a contener el Inflate que se va a encargar de transformar el archivo XML en vistas.
-     * @property dialog // Variable Objeto de la Clase AlertDialog que se encarga de mostrar la ventana Emergente.
-     * @property btnAplicar // Variable asociado al botón encargado de cambiar el color de los CardViews (Barras Verticales y Laterales).
      * @property layoutInflater // Propiedad heredad de la Clase ContextThemeWrapper que devuelve una instancia.
      *
      * @see layoutInflater // Herramienta de Android que se encarga de transformar archivos XML en vistas aplicables al código.
      * @see layoutInflater.inflate // Metodo encargado de leer un archivo XML y transformar los elementos que constan dentro
-     * @see AlertDialog.Builder.setView //
      * del archivo para hacerlos elementos interactuables dentro del código.
+     * @see AlertDialog.Builder.setView // Este método, implementado dentro de AlertDialog y en Builder, permite insertar una
+     * vista personalizada (un archivo XML). Pide como parametro la vista a insertar
      */
     private fun showColorChangeDialog() {
         val dialogView = layoutInflater.inflate(R.layout.activity_emergentview, null)
@@ -101,7 +102,9 @@ class RecyclerViewActivity : AppCompatActivity() {
      * Convierte el nombre de color en un valor hexadecimal correspondiente.
      *
      * Esta función pide como parametros $color y $barraSeleccionada para identificar el color al cual se quiere cambiar
-     * y la barra a la que hay que modificar teniendo de referencia el la variable $barraSeleccionada.
+     * y la barra a la que hay que modificar teniendo de referencia el la variable $barraSeleccionada. Dependiendo
+     * del contenido de variable $barraSeleccionada, aplicará un color con una opacidad diferentes. Y en el caso del color,
+     * este cambiará en base al contenido de la variable $color.
      *
      * @see ContextCompat Es una clase estátcia que permite obtener, de forma segura, recursos, comprobar permisos de ejecución
      * y manejar la compatibilidad de archivos de diferentes versiones de Android.
@@ -191,7 +194,19 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         }
     }
-
+    /**
+     * @author Gabriel Orlando Cruz Parraga
+     *
+     * @name aplicarColor
+     *
+     * Este método aplica el color que selecciona el metodo $getColorFromName a la barra seleccionada en $showColorChangeDialog.
+     * El cambio de color se aplica con el método de .setCardBackgroundColor() de la Clase CardView en el caso de los CardViews Horizontales,
+     * en el caso del recicler view, con un método en le adapter del RecyclerView, se actualizan con el método .udpateColors().
+     *
+     *
+     * @param barraSeleccionada // La barra seleccionada.
+     * @param nuevoColor // El nuevo color a aplicar.
+     */
     private fun aplicarColor(barraSeleccionada: String, nuevoColor: Int) {
 
         when (barraSeleccionada) {
